@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+@font-face {
+  font-family: electronicFont;
+  src: url(../font/DS-DIGIT.TTF);
+}
+body {
+  background-image: url(../images/bg.jpg);
+}
+.header {
+  width: 100%;
+  height: 1.25rem;
+  position: relative;
+  background-image: url(../images/head_bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.header h1 {
+  text-align: center;
+  line-height: 1rem;
+  color: #fff;
+  font-size: 0.475rem;
+}
+.header .showTime {
+  position: absolute;
+  right: 0.375rem;
+  top: 0;
+  line-height: 0.925rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.25rem;
+}
+.content {
+width: 100%;
+  margin: 0 auto;
+  padding: 0.125rem 0;
+  display: flex;
+}
+.bigBox {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainBox {
+  width: 40%;
+}
+.mainBox .totalBox {
+  background-color: rgba(101, 132, 226, 0.1);
+  width: 100%;
+  height: 2rem;
+}
+.mainBox .total {
+  width: 100%;
+  height: 1.2rem;
+  top: 0;
+  position: relative;
+}
+.mainBox .total .total_top {
+  content: '';
+}
+.mainBox .total .total_top::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+  content: '';
+}
+.mainBox .total .total_bottom {
+  content: '';
+}
+.mainBox .total .total_bottom::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+  content: '';
+}
+.mainBox .total ul {
+  display: flex;
+}
+.mainBox .total ul::after {
+  content: '';
+  position: absolute;
+  background-color: #888;
+  width: 2px;
+  height: 0.8rem;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, 25%);
+}
+.mainBox .total ul li {
+  width: 50%;
+  line-height: 1.2rem;
+  font-size: 0.875rem;
+  color: #ffeb7b;
+  text-align: center;
+  font-family: electronicFont;
+  position: relative;
+  content: '';
+}
+.mainBox ul {
+  display: flex;
+}
+.mainBox ul li {
+  width: 50%;
+  line-height: 0.8rem;
+  font-size: 0.3rem;
+  color: #888;
+  text-align: center;
+}
+.minBox {
+  width: 6.5rem;
+  height: 3.4rem;
+  margin-bottom: 0.375rem;
+  background-image: url(../images/line\(1\).png);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.minBox .chart {
+  width: 100%;
+  height: 3.2rem;
+}
+.minBox h3 {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.minBox h3 p {
+  width: 2rem;
+  display: flex;
+}
+.minBox h3 p span {
+  width: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+.minBox_top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  content: '';
+}
+.minBox_top::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+  content: '';
+}
+.minBox_top::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+  content: '';
+}
+.minBox_bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  content: '';
+}
+.minBox_bottom::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+  content: '';
+}
+.minBox_bottom::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+  content: '';
+}
